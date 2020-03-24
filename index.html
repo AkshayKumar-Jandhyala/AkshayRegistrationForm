@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html>
 
@@ -12,7 +13,7 @@
 
   <body class="body">
 <p class="heading">New Registration</p>
-  <form class="form" onsubmit="return validateForm();">
+  <form class="form" id="MyForm" onsubmit="return validateForm();">
 
       <p class="Subheading">USER DETAILS<p><br>
       <input class="input"  type="text" name="usr" placeholder="username" id="name"> <br><br>
@@ -62,10 +63,11 @@
         }
         else {
           alert('Registration Successful');
+          dovument.getElementById('MyForm').reset();
+          return false;
         }
 
   }
 </script>
 
 </html>
-
