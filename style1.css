@@ -1,0 +1,36 @@
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 150px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+
+  border: 0px;
+}
+.body {
+
+  background: linear-gradient(to left, #0099cc, #2A2A3E)
+
+}
+.Subheading
+{  font-family: "Tahoma", sans-serif;
+text-align: center;
+color: #2A2A3E;
+   font-size: 17px;
+}
+.button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: linear-gradient(to left, #0099cc, #35354E);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}

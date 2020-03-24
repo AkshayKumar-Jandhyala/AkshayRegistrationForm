@@ -1,0 +1,80 @@
+.body {
+
+  background: linear-gradient(to left, #0099cc, #2A2A3E)
+
+}
+
+.form {
+
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 5% auto;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+}
+
+.heading
+{font-family: "Arial", sans-serif;
+font-size: 40px;
+color: #D7D7E4;
+text-align: center;
+}
+
+.Subheading
+{  font-family: "Tahoma", sans-serif;
+text-align: center;
+color: #2A2A3E;
+   font-size: 17px;
+}
+
+.input {
+  font-family: "Roboto", sans-serif;
+  margin: 0 0 10px;
+  padding: 10px;
+  font-size: 14px;
+ box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+}
+
+.button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: linear-gradient(to left, #0099cc, #35354E);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 320px;
+  background-color: #fff;
+  color:#2A2A3E ;
+  text-align: left;
+  border-radius: 6px;
+  padding: 10px 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+
+
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
