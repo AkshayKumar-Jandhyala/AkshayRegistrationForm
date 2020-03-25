@@ -12,11 +12,11 @@
 
   <body class="body">
 <p class="heading">New Registration</p>
-  <form class="form" id="MyForm"  onsubmit="return validateForm();">
+  <div class="form" id="MyForm" >
 
       <p class="Subheading">USER DETAILS<p><br>
       <input class="input"  type="text" name="usr" placeholder="username" id="name"> <br><br>
-        <input class="input"  type="email" name="email" placeholder="email:xyz@gmai.com" id="email"> <br><br>
+      <input class="input"  type="email" name="email" placeholder="email:xyz@gmai.com" id="email"> <br><br>
 
 
         <div class="tooltip">  <input class="input"  type="password" name="pword" placeholder="password" id="password"><br><br>
@@ -26,48 +26,48 @@
 
 
 
-      <input class="button" type="submit" value="Register">
+    <button id="myButton" type="button" class="button" >REGISTER</button>
 
-  </form>
+  </div>
 </body>
 
 
 <script>
-    function validateForm() {
-        var un = document.getElementById('name').value;
-        var em = document.getElementById('email').value;
-        var pw = document.getElementById('password').value;
-      var paswd=  /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
+document.getElementById("myButton").onclick = function () {
+    var un = document.getElementById('name').value;
+    var em = document.getElementById('email').value;
+    var pw = document.getElementById('password').value;
+  var paswd=  /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
 
-        if (un=='')
-        {   alert('username is required');
-            return false;
-        }
+    if (un=='')
+    {   alert('username is required');
+        return false;
+    }
 
 
-        if (em=='')
-        {   alert('Email is required');
-            return false;
-        }
+    if (em=='')
+    {   alert('Email is required');
+        return false;
+    }
 
-        if (pw=='')
-        {   alert('Password is required');
-            return false;
-        }
+    if (pw=='')
+    {   alert('Password is required');
+        return false;
+    }
 
-        if(!(pw.match(paswd)))
-        {
-          alert('Password must be 7 to 15 characters which contain at least one numeric digit and a special character');
-              return false;
-        }
-        else {
-          alert('Registration Successful');
-          dovument.getElementById('MyForm').reset();
+    if(!(pw.match(paswd)))
+    {
+      alert('Password must be 7 to 15 characters which contain at least one numeric digit and a special character');
           return false;
-        }
+    }
+    else {
 
-  }
+      location.href = "create.html";
+  };
+
+    }
+
+
 </script>
 
 </html>
-
