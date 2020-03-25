@@ -11,9 +11,18 @@
 <form class="form" action="index.html" method="post">
 <p class="Subheading">Registration Successful<p>
 
-  <input class="button" type="submit" value="BACK">
+<div class="form" >
+<p class="Subheading">Registration Successful<p>
+
+    <button id="myButton" type="button" class="button" >BACK</button>
 
 
-</form>
+</div>
   </body>
 </html>
+
+<script>
+    document.getElementById("myButton").onclick = function () {
+        location.href = "index.html";
+    };
+</script>
